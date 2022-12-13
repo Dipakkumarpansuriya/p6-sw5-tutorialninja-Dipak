@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1">
+    <listeners>
+        <listener class-name="com.tutorialsninja.testsuite.DesktopsTest"></listener>
+        <listener class-name="com.tutorialsninja.testsuite.HomepageTest"></listener>
+        <listener class-name="com.tutorialsninja.testsuite.LaptopsAndNoteBooksTest"></listener>
+        <listener class-name="com.tutorialsninja.testsuite.MyAccountsTest"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+    <test name="Login Test">
+        <classes>
+            <class name="com.tutorialsninja.testsuite.MyAccountsTest"></class>
+            <class name="com.tutorialsninja.testsuite.LaptopsAndNoteBooksTest"></class>
+            <class name="com.tutorialsninja.testsuite.HomepageTest"></class>
+            <class name="com.tutorialsninja.testsuite.DesktopsTest"></class>
+        </classes>
+    </test>
+</suite>
